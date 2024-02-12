@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Age-estilo.css"/>
+    
+    <title>Age Calculator</title>
+</head>
+<body>
+    <main class="box">
+        <div class="content">
+            <div class="dates">
+                <form id="form">
+                    <div class="day">
+                        <label for="day">DAY</label>
+                        <input type="text" id="day" name="day" placeholder="DD" oninput="DValid()"/>
+                        <span id="requiredD">Invalid</span>
+                    </div>
+                    <div class="month">
+                        <label for="month">MONTH</label>
+                        <input type="text" id="month" name="month" placeholder="MM" oninput="MValid()"/>
+                        <span id="requiredM">Invalid</span>
+                    </div>
+                    <div class="year">
+                        <label for="year">YEAR</label>
+                        <input type="text" id="year" name="year" placeholder="YYYY" oninput="YValid()"/>
+                        <span id="requiredY">Invalid</span>
+                    </div>
+                </form>
+            </div>
+            <div class="enter">
+                <div class="line"></div>
+                <button onclick="Agecalc()"></button>
+            </div>
+            <div class="results">
+                <div class="--day">
+                    <p id="outputday">--</p><h1>days</h1>
+                </div>
+                <div class="--month">
+                    <p id="outputmonth">--<h1>months</h1>
+                </div>
+                <div class="--year">
+                    <p id="outputyear">--</p><h1>years</h1>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="javazinho.js"></script>
+</body>
+<script>
+    
+
+
+
+
+</script>
+</html>
